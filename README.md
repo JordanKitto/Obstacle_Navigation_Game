@@ -11,9 +11,7 @@
 - [Usage](#usage)
 - [Game Mechanics](#game-mechanics)
 - [Code Structure](#code-structure)
-- [Statement of Authorship](#statement-of-authorship)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
+
 
 ## Overview
 
@@ -22,21 +20,21 @@ Stealth Agent challenges you to safely navigate a hostile environment by adding 
 ## Features
 
 - **Dynamic Obstacle Management:**  
-  Add various types of obstacles including:
-  - **Guards:** Compromise a single grid point.
-  - **Fences:** Occupy a straight line between two points.
-  - **Sensors:** Detect within a circular range.
-  - **Cameras:** Monitor a cone of vision in one of the cardinal directions (n, s, e, w).
-  - **Laser Barriers:** Project a directional beam for a specified range.
+Add various types of obstacles including:
+- **Guards:** Compromise a single grid point.
+- **Fences:** Occupy a straight line between two points.
+- **Sensors:** Detect within a circular range.
+- **Cameras:** Monitor a cone of vision in one of the cardinal directions (n, s, e, w).
+- **Laser Barriers:** Project a directional beam for a specified range.
 
 - **Interactive Console Interface:**  
-  A text-based menu system for adding obstacles, checking safe directions, displaying a portion of the obstacle map, and finding a safe path using BFS.
+A text-based menu system for adding obstacles, checking safe directions, displaying a portion of the obstacle map, and finding a safe path using BFS.
 
 - **Safe Direction Analysis:**  
-  Evaluate the agent’s current position and determine which of the four cardinal directions (N, S, E, W) are safe to move.
+Evaluate the agent’s current position and determine which of the four cardinal directions (N, S, E, W) are safe to move.
 
 - **Pathfinding:**  
-  Use a breadth-first search algorithm to compute and display a safe path from the agent’s current location to a specified objective.
+Use a breadth-first search algorithm to compute and display a safe path from the agent’s current location to a specified objective.
 
 ## Technologies Used
 
@@ -50,27 +48,27 @@ Stealth Agent challenges you to safely navigate a hostile environment by adding 
 ### Using Visual Studio
 
 1. **Create a New Project:**
-   - Open Visual Studio.
-   - Create a new **Console App (.NET Framework)** or **Console App (.NET Core)** project in C#.
+- Open Visual Studio.
+ - Create a new **Console App (.NET Framework)** or **Console App (.NET Core)** project in C#.
 
 2. **Add the Code:**
-   - Replace the contents of `Program.cs` with your game code.
+ - Replace the contents of `Program.cs` with your game code.
 
-3. **Build and Run:**
-   - Build the solution and run the application.
+4. **Build and Run:**
+- Build the solution and run the application.
 
 4. **Usage:**
 When you run the game, a menu with several options is displayed in the console:
 
-    g: Add a Guard obstacle.
-    f: Add a Fence obstacle.
-    s: Add a Sensor obstacle.
-    c: Add a Camera obstacle.
-    l: Add a Laser Barrier.
-    d: Show safe directions from your current location.
-    m: Display a portion of the obstacle map.
-    p: Find a safe path to your objective.
-    x: Exit the game.
+- g: Add a Guard obstacle.
+- f: Add a Fence obstacle.
+- s: Add a Sensor obstacle.
+- c: Add a Camera obstacle.
+- l: Add a Laser Barrier.
+- d: Show safe directions from your current location.
+- m: Display a portion of the obstacle map.
+- p: Find a safe path to your objective.
+- x: Exit the game.
 
 Simply type the corresponding letter and follow the on-screen prompts to enter coordinates and other parameters.
 
